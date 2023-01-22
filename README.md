@@ -40,6 +40,15 @@ Tools used: MySQL Workbench 8.0 to clean and analyse data as some datasets were 
 -- 1. Check that all rows of csv files have been imported to MySQL workbench
 Prior to importing these files successfully, I faced some importation issues (all rows of datasets were not being imported) with the import wizard’s chosen datatype INT for column, ‘Id’ of some tables. I changed the datatype INT to BIGINT for columns ‘Id’ this allowed for larger values for this column to be imported. 
 
+```
+-- 1. Check all rows of .CSV files have been imported to MySQL workbench
+SELECT COUNT(*) FROM dailyactivity;        -- All 940 rows were imported successfully
+SELECT COUNT(*) FROM hourlyintensities;    -- All 22099 rows were imported successfully
+SELECT COUNT(*) FROM hourlysteps;		   -- All 22099 rows were imported successfully
+SELECT COUNT(*) FROM sleepday; 			   -- All 413 rows were imported successfully
+SELECT COUNT(*) FROM weightloginfo;        -- All 67 rows were imported successfully
+```
+
 ![](All%20Images/Code1.png)
  
 --2. Check to see how many unique participants there are per table 
