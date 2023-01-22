@@ -490,27 +490,30 @@ There is only information for 8 participants in weightloginfo as compared to 33 
 SELECT avg(BMI) FROM weightloginfo;				                         	-- 25.2 to 1.d.p is the average BMI of the 8 participants in weightloginfo
 ```
 
-I noticed within the dataset ‘hourlyintensitiesandsteps’ that as the Total Intensity increased, the Step Total also increased for most observations. To confirm this for the entirety of the data, I created a scatterplot as shown in Figure 1 in Tableau. The relationship confirmed a positive correlation between both variables (also confirmed by low P-value = <0.0001 and high R-Squared = 0.802786. This shows that the more steps users are taking per day, the higher the total intensity.  
 
 ![](All%20Images/Picture1.jpg)
 
-Figure 2 shows that generally as a user’s total steps increased, the greater the number of calories they burned. 
+I noticed within the dataset ‘hourlyintensitiesandsteps’ that as the Total Intensity increased, the Step Total also increased for most observations. To confirm this for the entirety of the data, I created a scatterplot as shown in Figure 1 in Tableau. The relationship confirmed a positive correlation between both variables (also confirmed by low P-value = <0.0001 and high R-Squared = 0.802786. This shows that the more steps users are taking per day, the higher the total intensity.  
+
 
 ![](All%20Images/Picture2.jpg)
+
+Figure 2 shows that generally as a user’s total steps increased, the greater the number of calories they burned. 
+
  
 ## SHARE: Data visualisations and insights
-Figure 3 shows that Saturday followed by Tuesday are the days of most activity. With Saturday, users are averaging 8153 steps and Sunday being the day of least activity with users averaging 6933 steps.
 
 ![](All%20Images/Picture3.jpg)
- 
-In Figure 4, there is a positive correlation between the number of calories burned and very active minutes of activity. The greater the activity in minutes, the greater the calories burned. Whereas there is not a correlation between minutes of being Sedentary and calories burned, the calories burned are maintained around the 1.5-2.5K mark for those sedentary for more than 600 minutes a day.
- 
+
+Figure 3 shows that Saturday followed by Tuesday are the days of most activity. With Saturday, users are averaging 8153 steps and Sunday being the day of least activity with users averaging 6933 steps.
+
 ![](All%20Images/Picture4.jpg)
 
-Figure 5 shows the trend of average total of steps taken over the 30 days at each hour. 6pm is the hour of greatest step total with 599 steps taken on average. Total steps fall from 8pm to 1am making this the period of least activity.
- 
+In Figure 4, there is a positive correlation between the number of calories burned and very active minutes of activity. The greater the activity in minutes, the greater the calories burned. Whereas there is not a correlation between minutes of being Sedentary and calories burned, the calories burned are maintained around the 1.5-2.5K mark for those sedentary for more than 600 minutes a day.
+
 ![](All%20Images/Picture5.jpg)
 
+Figure 5 shows the trend of average total of steps taken over the 30 days at each hour. 6pm is the hour of greatest step total with 599 steps taken on average. Total steps fall from 8pm to 1am making this the period of least activity.
 
 ## ACT: Answer initial questions and give recommendations 
 
