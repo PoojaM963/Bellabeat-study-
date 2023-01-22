@@ -1,13 +1,13 @@
-# Bellabeat-study-
-# h1 How can a wellness technology company play it smart?
+Bellabeat-study-
+# How can a wellness technology company play it smart?
 
-About the company - Bellabeat
+# About the company - Bellabeat
 
 Urška Sršen and Sando Mur founded ‘Bellabeat’ in 2013. This company manufactures health-focused products for women, collecting data on activity, sleep, stress and reproductive health. This data then provides a clearer outlook about health and habits to its users. Urška Sršen believes that Bellabeat has the potential to become a larger competitor in the global smart device market by analysing smart device fitness data, in order to gain valuable insight into how consumers use their smart devices.
 
 As Junior Data Analyst, part of the marketing analyst team at Bellabeat, we’ve been asked to focus on one Bellabeat product and analyse smart device usage data. Any insights will therefore help to guide marketing strategy for the company. We must present to Bellabeat’s executive team along with high-level recommendations for Bellabeat’s marketing strategy.
 
-ASK: Statement of Business Task
+# ASK: Statement of Business Task
 Analyse smart device usage data in order to gain insights into how consumers use non-Bellabeat smart devices. Select one Bellabeat product to apply these insights to in your presentation to help guide marketing strategy for the company – the product I will focus on is ‘Leaf’. This is a wellness tracker, worn as bracelet, necklace or clip and connects to the Bellabeat app to track activity, sleep and stress. 
 Stakeholders: Urška Sršen (Co-founder and CCO) and Sando Mur (Co-founder, key member of executive team)
 Questions to answer during analysis:
@@ -15,9 +15,10 @@ Questions to answer during analysis:
 2. How could these trends apply to Bellabeat customers?
 3. How could these trends help influence Bellabeat marketing strategy?
 
-PREPARE - Description of data sources used
+# PREPARE: Description of data sources used
 The data which will be used for analysis comes from a public Kaggle dataset uploaded by Mobius - FitBit Fitness Tracker Data . These datasets were generated from surveys via Amazon Mechanical Turk of thirty eligible FitBit users - who have consented to the submission of personal tracker data including minute-level output for physical activity, heart rate, and sleep monitoring. Data collected ranges from 03/12/2016 – 05/12/2016 and acknowledgements include Furberg, Robert; Brinton, Julia; Keating, Michael; Ortiz, Alexa. 
 The datasets come in the form of 18 CSV files including both long and wide formats and will be stored within a personal document folder upon my device. There may be some limitation so an addition of another dataset may help to address these.
+
 Limitations to consider (ROCCC):
 •	Sample size – With a low confidence interval, a sample size of 30 is not sufficient to represent a population – unreliable.
 •	Omission of data – Some participants didn’t wear their device for the 30 days and not all sleep records for users was collected and recorded
@@ -35,7 +36,7 @@ I will be using 5 of the 13 datasets as they contain information that will be mo
 
 Tools used: MySQL Workbench 8.0 to clean and analyse data as some datasets were too large to be used with Excel. I will then use Tableau for initial exploration of the data set and to create a static visualisation describing trends and using these insights to provide recommendations.
 
-PROCESS: Cleaning and transforming data
+# PROCESS: Cleaning and transforming data
 -- 1. Check that all rows of csv files have been imported to MySQL workbench
 Prior to importing these files successfully, I faced some importation issues (all rows of datasets were not being imported) with the import wizard’s chosen datatype INT for column, ‘Id’ of some tables. I changed the datatype INT to BIGINT for columns ‘Id’ this allowed for larger values for this column to be imported. 
 
@@ -74,7 +75,7 @@ weightloginfo table was the only table with missing values in 65/67 rows within 
 
 ![](All%20Images/Code10.png)
  
-ANALYSE: finding trends and relationships, performing calculations and organising data
+# ANALYSE: finding trends and relationships, performing calculations and organising data
 -- 1. Work out average, minimum and maximum daily steps from dailyactivity
 These calculations were executed, and I discovered that the minimum total steps = 0. The only possible reasoning being that total steps were not tracked. I discovered that 77/940 observations had 0 total steps and 15/33 (almost half) of the participants did not track this information at least once during the period of tracking. The average steps equalled to 7638 which is well below the recommendation of 10,000 a day according to The American Heart Association.
  
@@ -153,7 +154,8 @@ Figure 5 shows the trend of average total of steps taken over the 30 days at eac
 ![](All%20Images/Image5.jpg)
 
 
-ACT: Answer initial questions and give recommendations 
+# ACT: Answer initial questions and give recommendations 
+
 Recommendations
 •	As there are multiple instances of a lack of tracking, the Bellabeat app should alert users to actively use their devices whether that be every morning or if there has been a lack of activity for a consecutive number of hours/days, this will encourage users to increase their activity remain interactive with the device and app. 
 •	There should also be alerts when users hit a certain number of steps a day (e.g. alert when they hit every 2000 steps) so that they are actively aware of their activity, this will encourage users to meet or even exceed the recommended 10,000 steps (The American Heart Association).
