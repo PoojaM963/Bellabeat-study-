@@ -34,7 +34,7 @@ I will be using 5 of the 13 datasets as they contain information that will be mo
 -	hourlysteps 
 -	weightloginfo
 
-### Tools used: MySQL Workbench 8.0 to clean and analyse data as some datasets were too large to be used with Excel. I will then use Tableau for initial exploration of the data set and to create a static visualisation describing trends and using these insights to provide recommendations.
+Tools used: MySQL Workbench 8.0 to clean and analyse data as some datasets were too large to be used with Excel. I will then use Tableau for initial exploration of the data set and to create a static visualisation describing trends and using these insights to provide recommendations.
 
 ## PROCESS: Cleaning and transforming data
 -- 1. Check that all rows of csv files have been imported to MySQL workbench
@@ -61,6 +61,8 @@ Ensured that data spanned across 30 days from '2016-04-12' and '2016-05-12'
 
 -- 5. Check Id characters are appropriate character lengths
 I ensured all character lengths were consistent for each table (10 characters for Id) and 13 characters for LogId.
+
+// line
 
 ![](All%20Images/Code7.png)
 
@@ -156,7 +158,7 @@ Figure 5 shows the trend of average total of steps taken over the 30 days at eac
 
 ## ACT: Answer initial questions and give recommendations 
 
-### Recommendations
+### Recommendations:
 -	As there are multiple instances of a lack of tracking, the Bellabeat app should alert users to actively use their devices whether that be every morning or if there has been a lack of activity for a consecutive number of hours/days, this will encourage users to increase their activity remain interactive with the device and app. 
 - There should also be alerts when users hit a certain number of steps a day (e.g. alert when they hit every 2000 steps) so that they are actively aware of their activity, this will encourage users to meet or even exceed the recommended 10,000 steps (The American Heart Association).
 -	When 10,000 steps have been reached, a motivating message for this accomplishment will encourage users to continue making this achievement every day – a streak count could also influence users to continue maintaining a streak daily.
@@ -170,7 +172,7 @@ Figure 5 shows the trend of average total of steps taken over the 30 days at eac
 -	Data needed a bit more context to understand what each column was showing. There were also some errors that needed explaining such as the calculations for trackerdistance and totaldistance, sleep records and loggedactivitiesdistance. 
 -	weightloginfo table was the only table with missing values in 65/67 rows within the column ‘Fat’, this attribute was not recorded for most of the dataset and so it does not make sense to carry out any analysis on this section, data was very limited too.
 
-### Additional steps
+### Additional steps:
 -	Duration: Extended durations of data collection would give much more accurate findings and therefore recommendations. Collecting data for the whole year can provide some useful information on how users perform during different seasons. 
 -	For weightloginfo, information such as gender, age and location could prove to be useful and will allow for comparisons between these attributes. 
 -	A larger sample size will represent the population more accurately. 
