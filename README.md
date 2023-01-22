@@ -140,7 +140,7 @@ Figure 2 shows that generally as a user’s total steps increased, the greater t
 
 ![](All%20Images/Image2.jpg)
  
-SHARE: Data visualisations and insights
+# SHARE: Data visualisations and insights
 Figure 3 shows that Saturday followed by Tuesday are the days of most activity. With Saturday, users are averaging 8153 steps and Sunday being the day of least activity with users averaging 6933 steps.
 
 ![](All%20Images/Image3.jpg)
