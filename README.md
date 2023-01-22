@@ -11,21 +11,21 @@ As Junior Data Analyst, part of the marketing analyst team at Bellabeat, we’ve
 Analyse smart device usage data in order to gain insights into how consumers use non-Bellabeat smart devices. Select one Bellabeat product to apply these insights to in your presentation to help guide marketing strategy for the company – the product I will focus on is ‘Leaf’. This is a wellness tracker, worn as bracelet, necklace or clip and connects to the Bellabeat app to track activity, sleep and stress. 
 Stakeholders: Urška Sršen (Co-founder and CCO) and Sando Mur (Co-founder, key member of executive team)
 Questions to answer during analysis:
-1. What are some trends in smart device usage?
-2. How could these trends apply to Bellabeat customers?
-3. How could these trends help influence Bellabeat marketing strategy?
+### 1. What are some trends in smart device usage?
+### 2. How could these trends apply to Bellabeat customers?
+### 3. How could these trends help influence Bellabeat marketing strategy?
 
 ## PREPARE: Description of data sources used
 The data which will be used for analysis comes from a public Kaggle dataset uploaded by Mobius - FitBit Fitness Tracker Data . These datasets were generated from surveys via Amazon Mechanical Turk of thirty eligible FitBit users - who have consented to the submission of personal tracker data including minute-level output for physical activity, heart rate, and sleep monitoring. Data collected ranges from 03/12/2016 – 05/12/2016 and acknowledgements include Furberg, Robert; Brinton, Julia; Keating, Michael; Ortiz, Alexa. 
 The datasets come in the form of 18 CSV files including both long and wide formats and will be stored within a personal document folder upon my device. There may be some limitation so an addition of another dataset may help to address these.
 
-Limitations to consider (ROCCC):
+### Limitations to consider (ROCCC):
 +	Sample size – With a low confidence interval, a sample size of 30 is not sufficient to represent a population – unreliable.
 +	Omission of data – Some participants didn’t wear their device for the 30 days and not all sleep records for users was collected and recorded
 +	Historic data – Data collected ranges from 03/12/2016 – 05/12/2016, data is outdated and not current.
 +	Duration of data collection – data is only representative of one month of the whole year.
-•	Lack of demographic information – age, location and gender not recorded, this information could help clear up any bias when it came to analysis and recommendations.
-•	Survey – data may not be entirely accurate as reported by users themselves and collected by unknown third party.
++ Lack of demographic information – age, location and gender not recorded, this information could help clear up any bias when it came to analysis and recommendations.
++	Survey – data may not be entirely accurate as reported by users themselves and collected by unknown third party.
 
 I will be using 5 of the 13 datasets as they contain information that will be most useful in providing insights. From a quick inspection using excel, I decided the datasets I will use are as follows: 
 -	dailyactivity
@@ -34,7 +34,7 @@ I will be using 5 of the 13 datasets as they contain information that will be mo
 -	hourlysteps 
 -	weightloginfo
 
-Tools used: MySQL Workbench 8.0 to clean and analyse data as some datasets were too large to be used with Excel. I will then use Tableau for initial exploration of the data set and to create a static visualisation describing trends and using these insights to provide recommendations.
+### Tools used: MySQL Workbench 8.0 to clean and analyse data as some datasets were too large to be used with Excel. I will then use Tableau for initial exploration of the data set and to create a static visualisation describing trends and using these insights to provide recommendations.
 
 ## PROCESS: Cleaning and transforming data
 -- 1. Check that all rows of csv files have been imported to MySQL workbench
@@ -156,24 +156,24 @@ Figure 5 shows the trend of average total of steps taken over the 30 days at eac
 
 ## ACT: Answer initial questions and give recommendations 
 
-Recommendations
-•	As there are multiple instances of a lack of tracking, the Bellabeat app should alert users to actively use their devices whether that be every morning or if there has been a lack of activity for a consecutive number of hours/days, this will encourage users to increase their activity remain interactive with the device and app. 
-•	There should also be alerts when users hit a certain number of steps a day (e.g. alert when they hit every 2000 steps) so that they are actively aware of their activity, this will encourage users to meet or even exceed the recommended 10,000 steps (The American Heart Association).
-•	When 10,000 steps have been reached, a motivating message for this accomplishment will encourage users to continue making this achievement every day – a streak count could also influence users to continue maintaining a streak daily.
-•	Create a Total Steps of the day interactive board where users can collectively work towards a common goal. Users will feel much more motivated to exercise knowing other users are too. Use most popular days and least popular days as reminders to stay moving.
-•	Users should input their preferred bedtime and duration of sleep (give a recommended duration along with an optional function) and when it reaches within 30 minutes of that time, an alert should be sent out. Regarding exercise, those who are sedentary for more than 8 hours a day should receive regular alerts to move their body for a total of 60 minutes a day and be rewarded with a congratulatory message when this is achieved.
-•	Alert everyone at 18:00 to participate in activity as a community, this hour is usually after a typical day of working.
-•	If users’ aim is to lose weight, encourage them to regularly update their information into weightloginfo so they can track weight loss over time when following healthy habits. Avoid recording BMI as this can be discouraging and is also inaccurate based on a variety of demographics.
+### Recommendations
+-	As there are multiple instances of a lack of tracking, the Bellabeat app should alert users to actively use their devices whether that be every morning or if there has been a lack of activity for a consecutive number of hours/days, this will encourage users to increase their activity remain interactive with the device and app. 
+- There should also be alerts when users hit a certain number of steps a day (e.g. alert when they hit every 2000 steps) so that they are actively aware of their activity, this will encourage users to meet or even exceed the recommended 10,000 steps (The American Heart Association).
+-	When 10,000 steps have been reached, a motivating message for this accomplishment will encourage users to continue making this achievement every day – a streak count could also influence users to continue maintaining a streak daily.
+-	Create a Total Steps of the day interactive board where users can collectively work towards a common goal. Users will feel much more motivated to exercise knowing other users are too. Use most popular days and least popular days as reminders to stay moving.
+-	Users should input their preferred bedtime and duration of sleep (give a recommended duration along with an optional function) and when it reaches within 30 minutes of that time, an alert should be sent out. Regarding exercise, those who are sedentary for more than 8 hours a day should receive regular alerts to move their body for a total of 60 minutes a day and be rewarded with a congratulatory message when this is achieved.
+-	Alert everyone at 18:00 to participate in activity as a community, this hour is usually after a typical day of working.
+-	If users’ aim is to lose weight, encourage them to regularly update their information into weightloginfo so they can track weight loss over time when following healthy habits. Avoid recording BMI as this can be discouraging and is also inaccurate based on a variety of demographics.
 
-Points to note:
-•	This data isn’t sufficient to make confident decisions based on a whole population.
-•	Data needed a bit more context to understand what each column was showing. There were also some errors that needed explaining such as the calculations for trackerdistance and totaldistance, sleep records and loggedactivitiesdistance. 
-•	weightloginfo table was the only table with missing values in 65/67 rows within the column ‘Fat’, this attribute was not recorded for most of the dataset and so it does not make sense to carry out any analysis on this section, data was very limited too.
+### Points to note:
+-	This data isn’t sufficient to make confident decisions based on a whole population.
+-	Data needed a bit more context to understand what each column was showing. There were also some errors that needed explaining such as the calculations for trackerdistance and totaldistance, sleep records and loggedactivitiesdistance. 
+-	weightloginfo table was the only table with missing values in 65/67 rows within the column ‘Fat’, this attribute was not recorded for most of the dataset and so it does not make sense to carry out any analysis on this section, data was very limited too.
 
-Additional steps
-•	Duration: Extended durations of data collection would give much more accurate findings and therefore recommendations. Collecting data for the whole year can provide some useful information on how users perform during different seasons. 
-•	For weightloginfo, information such as gender, age and location could prove to be useful and will allow for comparisons between these attributes. 
-•	A larger sample size will represent the population more accurately. 
-•	Using a tracker and user’s permission via the app to collect information can be more accurate than relying on third party information and user’s manual input to understand how Bellabeat users perform. 
+### Additional steps
+-	Duration: Extended durations of data collection would give much more accurate findings and therefore recommendations. Collecting data for the whole year can provide some useful information on how users perform during different seasons. 
+-	For weightloginfo, information such as gender, age and location could prove to be useful and will allow for comparisons between these attributes. 
+-	A larger sample size will represent the population more accurately. 
+-	Using a tracker and user’s permission via the app to collect information can be more accurate than relying on third party information and user’s manual input to understand how Bellabeat users perform. 
 
 
