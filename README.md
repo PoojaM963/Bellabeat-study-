@@ -1,7 +1,7 @@
 Bellabeat-study-
 # How can a wellness technology company play it smart?
 
-> ## About the company - Bellabeat
+## About the company - Bellabeat
 
 Urška Sršen and Sando Mur founded ‘Bellabeat’ in 2013. This company manufactures health-focused products for women, collecting data on activity, sleep, stress and reproductive health. This data then provides a clearer outlook about health and habits to its users. Urška Sršen believes that Bellabeat has the potential to become a larger competitor in the global smart device market by analysing smart device fitness data, in order to gain valuable insight into how consumers use their smart devices.
 
@@ -20,10 +20,10 @@ The data which will be used for analysis comes from a public Kaggle dataset uplo
 The datasets come in the form of 18 CSV files including both long and wide formats and will be stored within a personal document folder upon my device. There may be some limitation so an addition of another dataset may help to address these.
 
 Limitations to consider (ROCCC):
-•	Sample size – With a low confidence interval, a sample size of 30 is not sufficient to represent a population – unreliable.
-•	Omission of data – Some participants didn’t wear their device for the 30 days and not all sleep records for users was collected and recorded
-•	Historic data – Data collected ranges from 03/12/2016 – 05/12/2016, data is outdated and not current.
-•	Duration of data collection – data is only representative of one month of the whole year.
++	Sample size – With a low confidence interval, a sample size of 30 is not sufficient to represent a population – unreliable.
++	Omission of data – Some participants didn’t wear their device for the 30 days and not all sleep records for users was collected and recorded
++	Historic data – Data collected ranges from 03/12/2016 – 05/12/2016, data is outdated and not current.
++	Duration of data collection – data is only representative of one month of the whole year.
 •	Lack of demographic information – age, location and gender not recorded, this information could help clear up any bias when it came to analysis and recommendations.
 •	Survey – data may not be entirely accurate as reported by users themselves and collected by unknown third party.
 
