@@ -39,7 +39,7 @@ PROCESS: Cleaning and transforming data
 -- 1. Check that all rows of csv files have been imported to MySQL workbench
 Prior to importing these files successfully, I faced some importation issues (all rows of datasets were not being imported) with the import wizard’s chosen datatype INT for column, ‘Id’ of some tables. I changed the datatype INT to BIGINT for columns ‘Id’ this allowed for larger values for this column to be imported. 
 
-![](All%20Images/Code1.png)
+![](All%20Images/Code1.jpg)
  
 --2. Check to see how many unique participants there are per table 
 There are limited numbers of participants in each table. 33 in dailyactivity, hourlyintensities, hourlysteps; 24 in sleepday and 8 in weightloginfo. This data isn’t sufficient to make confident decisions based on a whole population.
