@@ -16,7 +16,7 @@ Questions to answer during analysis:
 ### 3. How could these trends help influence Bellabeat marketing strategy?
 
 ## PREPARE: Description of data sources used
-The data which will be used for analysis comes from a public Kaggle dataset uploaded by Mobius - FitBit Fitness Tracker Data . These datasets were generated from surveys via Amazon Mechanical Turk of thirty eligible FitBit users - who have consented to the submission of personal tracker data including minute-level output for physical activity, heart rate, and sleep monitoring. Data collected ranges from 03/12/2016 – 05/12/2016 and acknowledgements include Furberg, Robert; Brinton, Julia; Keating, Michael; Ortiz, Alexa. 
+The data which will be used for analysis comes from a public Kaggle dataset uploaded by Mobius - FitBit Fitness Tracker Data . These datasets were generated from surveys via Amazon Mechanical Turk of thirty eligible FitBit users - who have consented to the submission of personal tracker data including minute-level output for physical activity, heart rate, and sleep monitoring. Data collected ranges from 03/12/2016 – 05/12/2016 and acknowledgements include Furberg, Robert; Brinton, Julia; Keating, Michael; Ortiz, Alexa. To find dataset, use this link: https://www.kaggle.com/datasets/arashnic/fitbit
 The datasets come in the form of 18 CSV files including both long and wide formats and will be stored within a personal document folder upon my device. There may be some limitation so an addition of another dataset may help to address these.
 
 ### Limitations to consider (ROCCC):
